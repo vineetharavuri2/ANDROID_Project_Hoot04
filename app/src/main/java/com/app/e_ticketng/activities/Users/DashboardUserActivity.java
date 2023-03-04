@@ -3,7 +3,10 @@ package com.app.e_ticketng.activities.Users;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+<<<<<<< HEAD
 import android.widget.Toast;
+=======
+>>>>>>> 96554649b6ad9a1c046666f833e90a67beb261a7
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -38,10 +41,15 @@ public class DashboardUserActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), MyPreviousTicketsActivity.class));
         });
         courtHearing.setOnClickListener(view->{
+<<<<<<< HEAD
             startActivity(new Intent(getApplicationContext(), CourtHearing.class));
         });
         eWallet.setOnClickListener(view->{
             Toast.makeText(this,"you have 350coins in your wallet!",Toast.LENGTH_SHORT).show();
+=======
+        });
+        eWallet.setOnClickListener(view->{
+>>>>>>> 96554649b6ad9a1c046666f833e90a67beb261a7
         });
     }
 }

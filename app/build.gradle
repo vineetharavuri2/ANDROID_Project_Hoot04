@@ -30,7 +30,11 @@ android {
 
 dependencies {
 
+<<<<<<< HEAD
     implementation 'androidx.appcompat:appcompat:1.6.0'
+=======
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+>>>>>>> 96554649b6ad9a1c046666f833e90a67beb261a7
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'

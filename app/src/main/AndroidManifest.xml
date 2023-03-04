@@ -30,6 +30,7 @@
         <activity android:name=".activities.Officers.CreateTicketActivity"/>
         <activity android:name=".activities.Officers.CheckTicketStatus"/>
         <activity android:name=".activities.Officers.AttentionTickets"/>
+<<<<<<< HEAD
 
 
 
@@ -38,6 +39,8 @@
         <activity android:name=".activities.Users.MyPreviousTicketsActivity"/>
         <activity android:name=".activities.Users.CourtHearing"/>
 
+=======
+>>>>>>> 96554649b6ad9a1c046666f833e90a67beb261a7
     </application>
 
 </manifest>

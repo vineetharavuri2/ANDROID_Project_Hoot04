@@ -1,6 +1,9 @@
 package com.app.e_ticketng.activities;
 import static com.app.e_ticketng.helpers.common_helper.getOfficerLogin;
+<<<<<<< HEAD
 import static com.app.e_ticketng.helpers.common_helper.getUserLogin;
+=======
+>>>>>>> 96554649b6ad9a1c046666f833e90a67beb261a7
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -15,7 +18,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.app.e_ticketng.R;
 import com.app.e_ticketng.activities.Officers.DashboardOfficerActivity;
+<<<<<<< HEAD
 import com.app.e_ticketng.activities.Users.DashboardUserActivity;
+=======
+>>>>>>> 96554649b6ad9a1c046666f833e90a67beb261a7
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnLogin;
@@ -45,10 +51,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         Toast.makeText(getApplicationContext(),"Login Success!",Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getApplicationContext(), DashboardOfficerActivity.class));
                     }
+<<<<<<< HEAD
                     else if(getUserLogin(stEmail,stPassword)){
                         Toast.makeText(getApplicationContext(),"Login Success!",Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getApplicationContext(), DashboardUserActivity.class));
                     }
+=======
+//                    else if(getUserLogin(stEmail,stPassword)){
+//                        Toast.makeText(getApplicationContext(),"Login Success!",Toast.LENGTH_SHORT).show();
+//                        startActivity(new Intent(getApplicationContext(), DashboardUserActivity.class));
+//                    }
+>>>>>>> 96554649b6ad9a1c046666f833e90a67beb261a7
                     else{
                         Toast.makeText(getApplicationContext(),"Invalid credentials!",Toast.LENGTH_SHORT).show();
                     }
