@@ -26,6 +26,10 @@
         <activity android:name=".activities.CreateAccountActivity"/>
         <activity android:name=".activities.Officers.DashboardOfficerActivity"
             android:theme="@style/Theme.E_Ticketing"/>
+        <activity android:name=".activities.Officers.MyTicketsOfficerActivity"/>
+        <activity android:name=".activities.Officers.CreateTicketActivity"/>
+        <activity android:name=".activities.Officers.CheckTicketStatus"/>
+        <activity android:name=".activities.Officers.AttentionTickets"/>
     </application>
 
 </manifest>

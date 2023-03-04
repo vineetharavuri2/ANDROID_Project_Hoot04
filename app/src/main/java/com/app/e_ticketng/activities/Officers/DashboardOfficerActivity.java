@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.app.e_ticketng.R;
+import com.app.e_ticketng.activities.CreateAccountActivity;
 import com.app.e_ticketng.activities.LoginActivity;
 
 public class DashboardOfficerActivity extends AppCompatActivity {
@@ -31,16 +32,16 @@ public class DashboardOfficerActivity extends AppCompatActivity {
             startActivity(intent);
         });
         cardMyTickets.setOnClickListener(view->{
-            Toast.makeText(this,"My tickets!",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), MyTicketsOfficerActivity.class));
         });
         createTickets.setOnClickListener(view->{
-            Toast.makeText(this,"createTickets!",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), CreateTicketActivity.class));
         });
         ticketStatus.setOnClickListener(view->{
-            Toast.makeText(this,"ticketStatus!",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), CheckTicketStatus.class));
         });
         ticketsAttention.setOnClickListener(view->{
-            Toast.makeText(this,"ticketsAttention!",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), CheckTicketStatus.class));
         });
     }
 }
