@@ -21,7 +21,6 @@ public class CreateAccountActivity extends AppCompatActivity implements View.OnC
         tvCreateAccount = findViewById(R.id.CreateAccount);
         btnLogin.setOnClickListener(this);
         tvCreateAccount.setOnClickListener(this);
-
     }
 
     @Override
