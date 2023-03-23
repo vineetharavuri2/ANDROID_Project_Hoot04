@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.e_ticketing">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.E_Ticketing.NoActionBar"
+        tools:targetApi="33">
+        <activity
+            android:name="com.app.e_ticketing.activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name="com.app.e_ticketing.activities.CreateAccountActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.DashboardOfficerActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.MyTicketsOfficerActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.CreateTicketActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.CheckTicketStatus"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.AttentionTickets"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.TicketDetails"/>
+
+        <activity android:name="com.app.e_ticketing.activities.Users.DashboardUserActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Users.MyPendingTicketsActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Users.MyPreviousTicketsActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Users.CourtHearing"/>
+    </application>
+
+</manifest>
