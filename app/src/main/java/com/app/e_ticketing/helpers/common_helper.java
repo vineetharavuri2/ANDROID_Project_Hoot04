@@ -9,16 +9,14 @@ import java.util.List;
 
 public class common_helper {
     public static String collection_users = "users";
-
-    public static boolean getOfficerLogin(String email, String password) {
+    public static boolean getOfficerLogin(String email, String password){
         return email.equals("officer@gmail.com") && password.equals("officer123");
     }
-
-    public static boolean getUserLogin(String email, String password) {
+    public static boolean getUserLogin(String email, String password){
         return email.equals("user@gmail.com") && password.equals("user123");
     }
 
-    public static List<User> getUsersList() {
+    public static List<User> getUsersList(){
         List<User> list = new ArrayList<>();
         list.add(new User("1",
                 "Lucas@gmail.com",
@@ -50,9 +48,9 @@ public class common_helper {
         return list;
     }
 
-    public static List<Ticket> getTicketList() {
+    public static List<Ticket> getTicketList(){
         List<Ticket> list = new ArrayList<>();
-        list.add(new Ticket("1",
+        list.add(new Ticket("12345",
                 "Crossed Speed limit & Dangerous Driving",
                 "Lucas",
                 "Lucas",
@@ -63,7 +61,7 @@ public class common_helper {
                 "BEP123",
                 "Pending"
         ));
-        list.add(new Ticket("2",
+        list.add(new Ticket("67890",
                 "Violation of Traffic Rules",
                 "Amelia",
                 "Amelia",
@@ -82,10 +80,9 @@ public class common_helper {
         List<Ticket> list = getTicketList();
         Ticket ticket = new Ticket();
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).getId().equals(id))
+            if(list.get(i).getId().equals(id))
                 ticket = list.get(i);
         }
         return ticket;
     }
 }
-

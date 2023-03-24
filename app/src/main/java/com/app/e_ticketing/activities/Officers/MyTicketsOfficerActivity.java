@@ -34,10 +34,9 @@ public class MyTicketsOfficerActivity extends AppCompatActivity {
     public void setUpRecyclerView(){
         list = getTicketList();
         recyclerView = findViewById(R.id.ListLabour);
-        adapter = new TicketsAdapter(list, getApplicationContext());
+        adapter = new TicketsAdapter(list, getApplicationContext(),"all");
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 //        getLaboursList();
     }
 }
-

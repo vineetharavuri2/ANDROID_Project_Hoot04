@@ -2,10 +2,12 @@ package com.app.e_ticketing.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,9 +25,11 @@ import java.util.List;
 public class TicketsAdapter extends RecyclerView.Adapter<TicketsAdapter.MyTicket> {
     List<Ticket> list = Collections.emptyList();
     Context mContext;
-    public TicketsAdapter(List<Ticket> list, Context context){
+    String type;
+    public TicketsAdapter(List<Ticket> list, Context context, String type){
         this.list = list;
         this.mContext = context;
+        this.type = type;
     }
 
     @NonNull
@@ -42,11 +46,15 @@ public class TicketsAdapter extends RecyclerView.Adapter<TicketsAdapter.MyTicket
         holder.tvTicketName.setText(ticket.getTicket_name());
         holder.tvTicketIssueDate.setText(ticket.getDatetime());
         holder.tvStatus.setText(ticket.getStatus());
+        if(type.equals("attention")){
+//            holder.ticket_item_image.setImageTintList(ColorStateList.valueOf(mContext.getResources().getColor(R.color.red)));
+        }
 
         holder.ticketItemCard.setOnClickListener(view->{
             Intent intent = new Intent(view.getContext(), TicketDetails.class);
             Bundle extras = new Bundle();
             extras.putString("ticket_id",ticket.getId());
+            extras.putString("return_activity","mytickets");
             intent.putExtras(extras);
             view.getContext().startActivity(intent);
         });
@@ -60,6 +68,7 @@ public class TicketsAdapter extends RecyclerView.Adapter<TicketsAdapter.MyTicket
         // Here we hold the MyDoctorItems
         TextView tvUserName,tvTicketIssueDate,tvTicketName,tvStatus;
         CardView ticketItemCard;
+        ImageView ticket_item_image;
         public MyTicket(@NonNull View itemView) {
             super(itemView);
             tvUserName = itemView.findViewById(R.id.tvUserName);
@@ -67,6 +76,7 @@ public class TicketsAdapter extends RecyclerView.Adapter<TicketsAdapter.MyTicket
             tvTicketName = itemView.findViewById(R.id.tvTicketName);
             ticketItemCard = itemView.findViewById(R.id.ticketItemCard);
             tvStatus = itemView.findViewById(R.id.tvStatus);
+            ticket_item_image = itemView.findViewById(R.id.ticket_item_image);
         }
     }
 }

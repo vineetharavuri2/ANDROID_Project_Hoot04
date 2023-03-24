@@ -16,6 +16,7 @@ public class TicketDetails extends BaseActivity {
     Ticket ticket = new Ticket();
     TextView tvTicketName,tvUserName,tvLocation,tvDatetime,tvAmount,tvInfo,tvVehicleNo;
     Button btnClose,btnEdit;
+    String return_activity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +39,27 @@ public class TicketDetails extends BaseActivity {
         if (null != intent) {
             //Null Checking
             String strId= intent.getStringExtra("ticket_id");
+            return_activity= intent.getStringExtra("return_activity");
             if(!strId.isEmpty()) {
                 ticket = getTicketDetails(strId);
-                showDetails(ticket);
+                try {
+                    if (ticket.getTicket_name().isEmpty()) {
+                        Toast.makeText(this, "invalid!", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(), CheckTicketStatus.class));
+                    }
+                    showDetails(ticket);
+                }catch (Exception ex){
+                    ex.printStackTrace();
+                    Toast.makeText(this, "invalid!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), CheckTicketStatus.class));
+                }
             }
             else {
                 Toast.makeText(this, "invalid!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), MyTicketsOfficerActivity.class));
+                if(return_activity.equals("search"))
+                    startActivity(new Intent(getApplicationContext(), CheckTicketStatus.class));
+                else
+                    startActivity(new Intent(getApplicationContext(), MyTicketsOfficerActivity.class));
             }
         }
 
@@ -64,4 +79,3 @@ public class TicketDetails extends BaseActivity {
         tvAmount.setText(ticket.getAmount()+"");
     }
 }
-

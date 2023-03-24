@@ -37,7 +37,7 @@ public class DashboardOfficerActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), CheckTicketStatus.class));
         });
         ticketsAttention.setOnClickListener(view->{
-            startActivity(new Intent(getApplicationContext(), CheckTicketStatus.class));
+            startActivity(new Intent(getApplicationContext(), AttentionTickets.class));
         });
     }
 }
