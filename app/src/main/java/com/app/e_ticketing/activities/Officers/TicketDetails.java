@@ -64,3 +64,4 @@ public class TicketDetails extends BaseActivity {
         tvAmount.setText(ticket.getAmount()+"");
     }
 }
+
