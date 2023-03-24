@@ -37,6 +37,12 @@ public class CheckTicketStatus extends BaseActivity {
         });
     }
 
-
+    private void searchTicket(String ticket_id){
+            Intent intent = new Intent(this, TicketDetails.class);
+            Bundle extras = new Bundle();
+            extras.putString("ticket_id",ticket_id);
+            extras.putString("return_activity","search");
+            intent.putExtras(extras);
+            startActivity(intent);
     }
 }
