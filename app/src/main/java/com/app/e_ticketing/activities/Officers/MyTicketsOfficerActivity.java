@@ -25,18 +25,8 @@ public class MyTicketsOfficerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_tickets);
-        findViewById(R.id.btnBack).setOnClickListener(view->{
+        findViewById(R.id.btnBack).setOnClickListener(view -> {
             this.finish();
         });
-        setUpRecyclerView();
-    }
-
-    public void setUpRecyclerView(){
-        list = getTicketList();
-        recyclerView = findViewById(R.id.ListLabour);
-        adapter = new TicketsAdapter(list, getApplicationContext(),"all");
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-//        getLaboursList();
     }
 }

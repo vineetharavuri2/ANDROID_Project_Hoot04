@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.e_ticketing">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +15,7 @@
         android:theme="@style/Theme.E_Ticketing.NoActionBar"
         tools:targetApi="33">
         <activity
-            android:name=".activities.LoginActivity"
+            android:name="com.app.e_ticketing.activities.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,13 +25,18 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".activities.CreateAccountActivity"/>
-        <activity android:name=".activities.Officers.DashboardOfficerActivity"
-            android:theme="@style/Theme.E_Ticketing"/>
-        <activity android:name=".activities.Officers.MyTicketsOfficerActivity"/>
-        <activity android:name=".activities.Officers.CreateTicketActivity"/>
-        <activity android:name=".activities.Officers.CheckTicketStatus"/>
-        <activity android:name=".activities.Officers.AttentionTickets"/>
+        <activity android:name="com.app.e_ticketing.activities.CreateAccountActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.DashboardOfficerActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.MyTicketsOfficerActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.CreateTicketActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.CheckTicketStatus"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.AttentionTickets"/>
+        <activity android:name="com.app.e_ticketing.activities.Officers.TicketDetails"/>
+
+        <activity android:name="com.app.e_ticketing.activities.Users.DashboardUserActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Users.MyPendingTicketsActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Users.MyPreviousTicketsActivity"/>
+        <activity android:name="com.app.e_ticketing.activities.Users.CourtHearing"/>
     </application>
 
 </manifest>
