@@ -36,6 +36,6 @@ public class MyPendingTicketsActivity extends AppCompatActivity {
         adapter = new UserTicketsAdapter(list, getApplicationContext(),"new");
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        
+
     }
 }
