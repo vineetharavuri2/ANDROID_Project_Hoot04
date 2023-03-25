@@ -23,7 +23,7 @@ public class MyPreviousTicketsActivity extends AppCompatActivity {
     List<Ticket> list = new ArrayList<>();
     @Override
 
-    
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_previous_tickets);
