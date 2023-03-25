@@ -2,7 +2,6 @@ package com.app.e_ticketing.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,18 +14,18 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.e_ticketing.R;
-import com.app.e_ticketing.activities.Officers.DashboardOfficerActivity;
 import com.app.e_ticketing.activities.Officers.TicketDetails;
+import com.app.e_ticketing.activities.Users.UserTicketDetails;
 import com.app.e_ticketing.models.Ticket;
 
 import java.util.Collections;
 import java.util.List;
 
-public class TicketsAdapter extends RecyclerView.Adapter<TicketsAdapter.MyTicket> {
+public class UserTicketsAdapter extends RecyclerView.Adapter<UserTicketsAdapter.MyTicket> {
     List<Ticket> list = Collections.emptyList();
     Context mContext;
     String type;
-    public TicketsAdapter(List<Ticket> list, Context context, String type){
+    public UserTicketsAdapter(List<Ticket> list, Context context, String type){
         this.list = list;
         this.mContext = context;
         this.type = type;
@@ -42,19 +41,28 @@ public class TicketsAdapter extends RecyclerView.Adapter<TicketsAdapter.MyTicket
     @Override
     public void onBindViewHolder(@NonNull MyTicket holder, int position) {
         Ticket ticket = list.get(position);
-        holder.tvUserName.setText(ticket.getUser_name());
-        holder.tvTicketName.setText(ticket.getTicket_name());
+        holder.tvUserName.setText(ticket.getTicket_name());
+        holder.tvTicketName.setText("Vehicle Reg no: "+ticket.getVehicle_reg());
         holder.tvTicketIssueDate.setText(ticket.getDatetime());
         holder.tvStatus.setText(ticket.getStatus());
-        if(type.equals("attention")){
-            // holder.ticket_item_image.setImageTintList(ColorStateList.valueOf(mContext.getResources().getColor(R.color.red)));
-        }
+
+        if(ticket.getStatus().equals("Completed"))
+            holder.tvStatus.setTextColor(mContext.getResources().getColor(R.color.green));
+        else
+            holder.tvStatus.setTextColor(mContext.getResources().getColor(R.color.yellow));
+
+        holder.tvStatus.setText(ticket.getStatus());
 
         holder.ticketItemCard.setOnClickListener(view->{
-            Intent intent = new Intent(view.getContext(), TicketDetails.class);
+            Intent intent = new Intent(view.getContext(), UserTicketDetails.class);
             Bundle extras = new Bundle();
             extras.putString("ticket_id",ticket.getId());
-            extras.putString("return_activity","mytickets");
+
+            if(type.equals("all"))
+                extras.putString("activity","history");
+            else
+                extras.putString("activity","new");
+
             intent.putExtras(extras);
             view.getContext().startActivity(intent);
         });

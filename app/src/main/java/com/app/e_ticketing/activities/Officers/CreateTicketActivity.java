@@ -50,13 +50,10 @@ public class CreateTicketActivity extends BaseActivity{
         stLocation = etLocation.getText().toString().trim();
         stNotes = etNotes.getText().toString().trim();
 
-
-
             if (TextUtils.isEmpty(stFullName)) {
                 fullName.setError("Required");
                 result = false;
-            }
-            else fullName.setError(null);
+            } else fullName.setError(null);
 
             if (TextUtils.isEmpty(stVehicleRegNo)) {
                 etVehicleRegNo.setError("Required");
@@ -79,7 +76,6 @@ public class CreateTicketActivity extends BaseActivity{
             } else {
                 etNotes.setError(null);
             }
-            
         return result;
     }
 
