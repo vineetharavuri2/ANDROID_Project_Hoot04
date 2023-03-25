@@ -28,7 +28,7 @@ public class CourtHearing extends AppCompatActivity {
         setUpRecyclerView();
     }
 
-    
+
     public void setUpRecyclerView(){
         list = getCourtHearings();
         recyclerView = findViewById(R.id.ListLabour);
