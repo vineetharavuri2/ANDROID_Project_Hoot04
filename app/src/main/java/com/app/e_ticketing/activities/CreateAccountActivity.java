@@ -73,6 +73,10 @@ public class CreateAccountActivity extends BaseActivity {
             return;
         }
 
+
+
+
+
         showProgressDialog();
             mAuth.createUserWithEmailAndPassword(stEmail, stPassword)
                     .addOnCompleteListener(task -> {
@@ -100,6 +104,9 @@ public class CreateAccountActivity extends BaseActivity {
         etDob = findViewById(R.id.etDob);
         rgGender = findViewById(R.id.rgGender);
         writeNewUser(user.getUid(), user.getEmail(),stName,stMobile,stAddress,stDob,gender);
+
+
+
         // Go to MainActivity
         Toast.makeText(this,"User account created!",Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, LoginActivity.class));
