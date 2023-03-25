@@ -24,6 +24,9 @@ public class UserTicketDetails extends BaseActivity {
     Button btnPay;
     String return_activity,activity;
     @Override
+
+
+    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_ticket_details);
