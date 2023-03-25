@@ -12,11 +12,12 @@ public class Ticket {
     private String location;
     private Double amount;
     private String vehicle_reg;
+    private boolean payment_status;
     private String status;
 
     public Ticket(){}
-    public Ticket(String id, String ticket_name,String user_id, String user_name, String datetime,
-                  String description, String location, Double amount, String vehicle_reg, String status) {
+    public Ticket(String id, String ticket_name,String user_id, String user_name, String datetime, String description,
+                  String location, Double amount, String vehicle_reg, boolean payment_status, String status) {
         this.id = id;
         this.ticket_name = ticket_name;
         this.user_id = user_id;
@@ -26,6 +27,7 @@ public class Ticket {
         this.vehicle_reg = vehicle_reg;
         this.location = location;
         this.amount = amount;
+        this.payment_status = payment_status;
         this.status = status;
     }
 
@@ -59,6 +61,14 @@ public class Ticket {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public boolean isPayment_status() {
+        return payment_status;
+    }
+
+    public void setPayment_status(boolean payment_status) {
+        this.payment_status = payment_status;
     }
 
     public String getVehicle_reg() {

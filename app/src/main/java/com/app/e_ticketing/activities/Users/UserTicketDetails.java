@@ -24,9 +24,6 @@ public class UserTicketDetails extends BaseActivity {
     Button btnPay;
     String return_activity,activity;
     @Override
-
-
-    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_ticket_details);
@@ -87,7 +84,7 @@ public class UserTicketDetails extends BaseActivity {
         tvAmount.setText(ticket.getAmount()+"");
         if(ticket.isPayment_status()) {
             btnPay.setText("PAID");
-//            Toast.makeText(this, "Ticket closed!", Toast.LENGTH_SHORT).show();
+            //   Toast.makeText(this, "Ticket closed!", Toast.LENGTH_SHORT).show();
         }
         else{
             btnPay.setOnClickListener(view->{
