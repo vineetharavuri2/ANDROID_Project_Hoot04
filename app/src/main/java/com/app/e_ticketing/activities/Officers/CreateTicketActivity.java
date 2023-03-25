@@ -50,7 +50,7 @@ public class CreateTicketActivity extends BaseActivity{
         stLocation = etLocation.getText().toString().trim();
         stNotes = etNotes.getText().toString().trim();
 
-        
+
 
             if (TextUtils.isEmpty(stFullName)) {
                 fullName.setError("Required");
