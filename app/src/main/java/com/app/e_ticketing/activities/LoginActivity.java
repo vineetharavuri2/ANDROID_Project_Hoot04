@@ -79,6 +79,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         }
     }
 
+    @SuppressLint("SuspiciousIndentation")
     private void signIn(String email, String password, View view) {
         Log.d(TAG, "signIn:" + email);
         showProgressDialog();

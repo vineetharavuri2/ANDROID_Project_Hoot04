@@ -5,6 +5,10 @@ import androidx.annotation.NonNull;
 public class CourtHearing {
     private String id;
     private String ticket_id;
+
+
+
+    
     private String case_name;
     private String datetime;
     private String description;
