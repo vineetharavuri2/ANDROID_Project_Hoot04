@@ -8,7 +8,7 @@ public class CourtHearing {
 
 
 
-    
+
     private String case_name;
     private String datetime;
     private String description;

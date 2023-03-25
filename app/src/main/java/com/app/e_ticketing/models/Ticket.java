@@ -3,8 +3,17 @@ package com.app.e_ticketing.models;
 import androidx.annotation.NonNull;
 
 public class Ticket {
+
+
+
+
     private String id;
+
+
     private String user_id;
+
+
+
     private String ticket_name;
     private String user_name;
     private String datetime;
@@ -75,6 +84,9 @@ public class Ticket {
         return vehicle_reg;
     }
 
+
+
+
     public void setVehicle_reg(String vehicle_reg) {
         this.vehicle_reg = vehicle_reg;
     }
@@ -118,6 +130,11 @@ public class Ticket {
     public void setStatus(String status) {
         this.status = status;
     }
+
+
+
+
+
 
     @NonNull
     @Override
