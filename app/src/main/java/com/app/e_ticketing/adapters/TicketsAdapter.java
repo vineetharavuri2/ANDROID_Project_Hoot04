@@ -47,7 +47,7 @@ public class TicketsAdapter extends RecyclerView.Adapter<TicketsAdapter.MyTicket
         holder.tvTicketIssueDate.setText(ticket.getDatetime());
         holder.tvStatus.setText(ticket.getStatus());
         if(type.equals("attention")){
-//            holder.ticket_item_image.setImageTintList(ColorStateList.valueOf(mContext.getResources().getColor(R.color.red)));
+            // holder.ticket_item_image.setImageTintList(ColorStateList.valueOf(mContext.getResources().getColor(R.color.red)));
         }
 
         holder.ticketItemCard.setOnClickListener(view->{
