@@ -21,8 +21,6 @@ public class MyPendingTicketsActivity extends AppCompatActivity {
     UserTicketsAdapter adapter;
     List<Ticket> list = new ArrayList<>();
     @Override
-
-    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_pening_tickets);
@@ -30,6 +28,7 @@ public class MyPendingTicketsActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), DashboardUserActivity.class));
         });
         setUpRecyclerView();
+
     }
     public void setUpRecyclerView(){
         list = getUserTicketList("1");
@@ -37,5 +36,6 @@ public class MyPendingTicketsActivity extends AppCompatActivity {
         adapter = new UserTicketsAdapter(list, getApplicationContext(),"new");
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        
     }
 }
