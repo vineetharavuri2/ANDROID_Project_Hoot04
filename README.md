@@ -2,11 +2,11 @@
 
 ***Team 04***
 
-**Team information**<br>
-Vineetha Ravuri<br>
-Sravanth Kumar Reddy Pullamgari<br>
-Prashanth Dandyala<br>
-Lella Pitchaiah<br>
+**Team information** <br>
+Vineetha Ravuri <br>
+Sravanth Kumar Reddy Pullamgari <br>
+Prashanth Dandyala <br>
+Pitchaiah Lella <br>
 
 **App name**: Eticketing<br>
 
@@ -19,7 +19,7 @@ Lella Pitchaiah<br>
  SDK version:33<br>
  Min SDK:21<br>
  
- **Supported devices**:All android devices which run above android sdk level 20
+ **Supported devices**: All android devices which run above android sdk level 20
  
  **Credentials**<br>
  **User**<br>
