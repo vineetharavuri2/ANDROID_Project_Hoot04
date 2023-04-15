@@ -9,7 +9,7 @@ Lella pitchaiah
 
 **App name**: Eticketing<br>
 **LOGO** <br>
-![Logo][https://github.com/vineetharavuri2/ANDROID_Project_Hoot04/blob/master/app/src/main/res/drawable/logo.png]
+![Logo](https://github.com/vineetharavuri2/ANDROID_Project_Hoot04/blob/master/app/src/main/res/drawable/logo.png)
 
 
 **App information**
