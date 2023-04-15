@@ -2,35 +2,36 @@
 
 
 **Team information**
-Vineetha Ravuri
-Pullamgari Sravanth kumar
-prashanth Dandyala
-Lella pitchaiah
+Vineetha Ravuri<br>
+Sravanth Kumar Reddy Pullamgari<br>
+Prashanth Dandyala<br>
+Lella Pitchaiah<br>
 
 **App name**: Eticketing<br>
-**LOGO** <br>
+
+**LOGO** :<br>
 ![Logo](https://github.com/vineetharavuri2/ANDROID_Project_Hoot04/blob/master/app/src/main/res/drawable/logo.png)
 
 
 **App information**
- Gradle version:7.4 
- SDK version:33
- Min SDK:21
+ Gradle version:7.4<br> 
+ SDK version:33<br>
+ Min SDK:21<br>
  
  **Supported devices**:All android devices which run above android sdk level 20
  
- **Credentials**
- **User**
- User ID:user@gmail.com
- Password:User123
+ **Credentials**<br>
+ **User**<br>
+ ID:user@gmail.com<br>
+ Password:User123<br>
  
- **Officer**
- officer ID:Officer@gmail.com
- Password:officer123
+ **Officer**<br>
+ officer ID:Officer@gmail.com<br>
+ Password:officer123<br>
  
- **Sequencing**
+ **Sequencing**<br>
  
- Welcome Icon
+ Welcome Icon<br>
 1)Login Activity {Credentials to be entered}<br>
      -> if Login Successful with officer ID<br>
      
