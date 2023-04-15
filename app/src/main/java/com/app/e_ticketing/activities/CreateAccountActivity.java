@@ -26,13 +26,13 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class CreateAccountActivity extends BaseActivity {
     Button CreateAccount,LoginBtn;
-    EditText fullName,etEmail,etMobile,etAddress,etDob,etPassword,etVehicleRegNo;
+    EditText fullName,etEmail,etMobile,etAddress,etDob,etPassword;
     RadioGroup rgGender;
     RadioButton rbSelected;
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
     String gender = "Male";
-    String stName, stEmail, stMobile,stPassword , stDob, stAddress,stVehicleRegNo;
+    String stName, stEmail, stMobile,stPassword , stDob, stAddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +48,6 @@ public class CreateAccountActivity extends BaseActivity {
         etAddress = findViewById(R.id.etAddress);
         etDob = findViewById(R.id.etDob);
         rgGender = findViewById(R.id.rgGender);
-        etVehicleRegNo = findViewById(R.id.etVehicleRegNo);
 
         rgGender.setOnCheckedChangeListener((group, checkedId) -> {
             rbSelected = findViewById(rgGender.getCheckedRadioButtonId());
@@ -100,16 +99,16 @@ public class CreateAccountActivity extends BaseActivity {
         etAddress = findViewById(R.id.etAddress);
         etDob = findViewById(R.id.etDob);
         rgGender = findViewById(R.id.rgGender);
-        writeNewUser(user.getUid(), user.getEmail(),stName,stMobile,stVehicleRegNo,stAddress,stDob,gender);
+        writeNewUser(user.getUid(), user.getEmail(),stName,stMobile,stAddress,stDob,gender);
         // Go to MainActivity
         Toast.makeText(this,"User account created!",Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, LoginActivity.class));
         finish();
     }
 
-    private void writeNewUser(String userId, String email, String name, String mobile, String vehicleRegNo,
+    private void writeNewUser(String userId, String email, String name, String mobile,
                               String address,String dob, String gender) {
-        User user = new User(userId,email, name,mobile, address,vehicleRegNo, gender,dob ,true);
+        User user = new User(userId,email, name,mobile, address, gender,dob ,true);
         mDatabase.child(collection_users).child(userId).setValue(user);
     }
     private boolean  validateForm(){
@@ -119,7 +118,6 @@ public class CreateAccountActivity extends BaseActivity {
         stMobile = etMobile.getText().toString();
         stPassword = etPassword.getText().toString();
         stDob = etDob.getText().toString();
-        stVehicleRegNo = etVehicleRegNo.getText().toString();
 
         if(stName.isEmpty()){
             fullName.setError("Required");
@@ -139,9 +137,6 @@ public class CreateAccountActivity extends BaseActivity {
         }
         else if(stDob.isEmpty()){
             etDob.setError("Required");
-            flag = false;
-        } else if(stVehicleRegNo.isEmpty()){
-            etVehicleRegNo.setError("Required");
             flag = false;
         }
         return flag;

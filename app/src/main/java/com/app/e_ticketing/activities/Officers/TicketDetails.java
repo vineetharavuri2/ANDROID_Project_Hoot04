@@ -1,6 +1,8 @@
 package com.app.e_ticketing.activities.Officers;
 
 import static com.app.e_ticketing.helpers.common_helper.collection_tickets;
+import static com.app.e_ticketing.helpers.common_helper.getTicketDetails;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -64,6 +66,7 @@ public class TicketDetails extends BaseActivity {
         }
     }
 
+    
     boolean check= false;
     private void getTicketDetails(String strId)
     {

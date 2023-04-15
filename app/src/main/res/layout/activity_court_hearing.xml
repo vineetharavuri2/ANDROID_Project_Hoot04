@@ -49,15 +49,6 @@
         android:layout_margin="5dp"
         android:layout_height="match_parent"
         />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="no tickets found"
-        android:visibility="gone"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:id="@+id/tvMsg"/>
 </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

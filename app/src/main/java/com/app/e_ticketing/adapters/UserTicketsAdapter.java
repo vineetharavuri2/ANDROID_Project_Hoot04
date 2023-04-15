@@ -57,6 +57,7 @@ public class UserTicketsAdapter extends RecyclerView.Adapter<UserTicketsAdapter.
             Intent intent = new Intent(view.getContext(), UserTicketDetails.class);
             Bundle extras = new Bundle();
             extras.putString("ticket_id",ticket.getId());
+
             if(type.equals("all"))
                 extras.putString("activity","history");
             else

@@ -41,18 +41,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/ListLabour"
             android:layout_width="match_parent"
-            android:visibility="visible"
             android:layout_margin="5dp"
             android:layout_height="match_parent"
             />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:visibility="gone"
-            android:id="@+id/tvMsg"
-            android:textColor="@color/black"
-            android:text="no tickets found"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

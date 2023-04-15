@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+
 import com.app.e_ticketing.R;
 import com.app.e_ticketing.activities.LoginActivity;
 import com.google.firebase.FirebaseApp;
@@ -45,8 +47,7 @@ public class DashboardUserActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), CourtHearing.class));
         });
         eWallet.setOnClickListener(view->{
-//            Toast.makeText(this,"you have 350coins in your wallet!",Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(getApplicationContext(), UserWalletDetails.class));
+            Toast.makeText(this,"you have 350coins in your wallet!",Toast.LENGTH_SHORT).show();
         });
     }
 }
