@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.app.e_ticketng.R;
+import com.app.e_ticketing.R;
 
 public class CheckTicketStatus extends AppCompatActivity {
     @Override

@@ -8,8 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.app.e_ticketng.R;
-import com.app.e_ticketng.activities.LoginActivity;
+import com.app.e_ticketing.R;
+import com.app.e_ticketing.activities.LoginActivity;
 
 public class CreateTicketActivity extends AppCompatActivity implements View.OnClickListener {
     Button CreateTicket;
@@ -26,7 +26,8 @@ public class CreateTicketActivity extends AppCompatActivity implements View.OnCl
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId())
+        {
             case R.id.CreateTicket:
                 startActivity(new Intent(getApplicationContext(), DashboardOfficerActivity.class));
                 break;

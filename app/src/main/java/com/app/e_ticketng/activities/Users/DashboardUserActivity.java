@@ -8,11 +8,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.app.e_ticketng.R;
-import com.app.e_ticketng.activities.LoginActivity;
-import com.app.e_ticketng.activities.Officers.CheckTicketStatus;
-import com.app.e_ticketng.activities.Officers.CreateTicketActivity;
-import com.app.e_ticketng.activities.Officers.MyTicketsOfficerActivity;
+import com.app.e_ticketing.R;
+import com.app.e_ticketing.activities.LoginActivity;
+import com.app.e_ticketing.activities.Officers.CheckTicketStatus;
+import com.app.e_ticketing.activities.Officers.CreateTicketActivity;
+import com.app.e_ticketing.activities.Officers.MyTicketsOfficerActivity;
 
 public class DashboardUserActivity extends AppCompatActivity {
     CardView cardMyTickets, myPrevTickets, eWallet, courtHearing;

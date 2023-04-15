@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.app.e_ticketng.R;
+import com.app.e_ticketing.R;
 
 public class CreateAccountActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnLogin;

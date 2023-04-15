@@ -1,6 +1,8 @@
 package com.app.e_ticketng.activities;
-import static com.app.e_ticketng.helpers.common_helper.getOfficerLogin;
-import static com.app.e_ticketng.helpers.common_helper.getUserLogin;
+import static com.app.e_ticketing.helpers.common_helper.getOfficerLogin;
+import static com.app.e_ticketing.helpers.common_helper.getUserLogin;
+import static com.app.e_ticketing.helpers.common_helper.getOfficerLogin;
+import static com.app.e_ticketing.helpers.common_helper.getUserLogin;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -13,9 +15,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.app.e_ticketng.R;
-import com.app.e_ticketng.activities.Officers.DashboardOfficerActivity;
-import com.app.e_ticketng.activities.Users.DashboardUserActivity;
+import com.app.e_ticketing.R;
+import com.app.e_ticketing.activities.Officers.DashboardOfficerActivity;
+import com.app.e_ticketing.activities.Users.DashboardUserActivity;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnLogin;

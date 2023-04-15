@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.app.e_ticketng.R;
+import com.app.e_ticketing.R;
 
 public class CourtHearing extends AppCompatActivity {
     @Override
