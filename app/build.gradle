@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace 'com.example.dogparkviewmodel'
+    namespace 'com.app.e_ticketng'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.dogparkviewmodel"
-        minSdk 27
-        targetSdk 32
+        applicationId "com.app.e_ticketng"
+        minSdk 21
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
