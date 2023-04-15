@@ -1,8 +1,6 @@
 package com.app.e_ticketing.activities.Users;
 
-import static com.app.e_ticketing.helpers.common_helper.collection_tickets;
 import static com.app.e_ticketing.helpers.common_helper.collection_wallets;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -11,10 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.app.e_ticketing.R;
-import com.app.e_ticketing.activities.Officers.CheckTicketStatus;
-import com.app.e_ticketing.activities.Officers.MyTicketsOfficerActivity;
 import com.app.e_ticketing.helpers.BaseActivity;
-import com.app.e_ticketing.models.Ticket;
 import com.app.e_ticketing.models.Wallet;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.FirebaseApp;

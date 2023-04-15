@@ -2,16 +2,12 @@ package com.app.e_ticketing.activities.Officers;
 
 import static android.content.ContentValues.TAG;
 import static com.app.e_ticketing.helpers.common_helper.collection_tickets;
-import static com.app.e_ticketing.helpers.common_helper.getTicketList;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 

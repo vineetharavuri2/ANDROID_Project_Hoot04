@@ -44,23 +44,25 @@ public class UserTicketsAdapter extends RecyclerView.Adapter<UserTicketsAdapter.
         holder.tvUserName.setText(ticket.getTicket_name());
         holder.tvTicketName.setText("Vehicle Reg no: "+ticket.getVehicle_reg());
         holder.tvTicketIssueDate.setText(ticket.getDatetime());
-        holder.tvStatus.setText(ticket.getStatus());
 
-        if(ticket.getStatus().equals("Completed"))
+        if(ticket.isPayment_status()){
+            holder.tvStatus.setText("Paid");
             holder.tvStatus.setTextColor(mContext.getResources().getColor(R.color.green));
-        else
-            holder.tvStatus.setTextColor(mContext.getResources().getColor(R.color.yellow));
+        }
+        else{
+            holder.tvStatus.setText("Pending");
+            holder.tvStatus.setTextColor(mContext.getResources().getColor(R.color.red));
+        }
 
-        holder.tvStatus.setText(ticket.getStatus());
+//        holder.tvStatus.setText(ticket.getStatus());
 
         holder.ticketItemCard.setOnClickListener(view->{
             Intent intent = new Intent(view.getContext(), UserTicketDetails.class);
             Bundle extras = new Bundle();
             extras.putString("ticket_id",ticket.getId());
-            if(type.equals("all"))
-                extras.putString("activity","history");
-            else
-                extras.putString("activity","new");
+
+            if(type.equals("all"))    extras.putString("activity","history");
+            else    extras.putString("activity","new");
 
             intent.putExtras(extras);
             view.getContext().startActivity(intent);

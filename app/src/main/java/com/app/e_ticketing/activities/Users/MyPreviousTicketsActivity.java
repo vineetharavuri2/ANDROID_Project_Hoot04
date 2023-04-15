@@ -3,17 +3,12 @@ package com.app.e_ticketing.activities.Users;
 import static android.content.ContentValues.TAG;
 import static com.app.e_ticketing.helpers.common_helper.collection_tickets;
 import static com.app.e_ticketing.helpers.common_helper.collection_users;
-import static com.app.e_ticketing.helpers.common_helper.getPrevUserTicketList;
-import static com.app.e_ticketing.helpers.common_helper.getUserTicketList;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -107,7 +102,7 @@ public class MyPreviousTicketsActivity extends BaseActivity {
                             adapter.notifyDataSetChanged();
                         }catch(Exception e){
                             e.printStackTrace();
-                            Log.e(TAG, "onDataChange: "+e.getMessage() );
+                            Log.e(TAG, "onDataChange: "+e.getMessage());
                         }
                     }
                     if(list.size() == 0){

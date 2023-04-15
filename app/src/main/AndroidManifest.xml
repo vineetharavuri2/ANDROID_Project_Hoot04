@@ -38,6 +38,7 @@
         <activity android:name="com.app.e_ticketing.activities.Users.MyPreviousTicketsActivity"/>
         <activity android:name="com.app.e_ticketing.activities.Users.CourtHearing"/>
         <activity android:name="com.app.e_ticketing.activities.Users.UserTicketDetails"/>
+        <activity android:name="com.app.e_ticketing.activities.Users.UserWalletDetails"/>
     </application>
 
 </manifest>

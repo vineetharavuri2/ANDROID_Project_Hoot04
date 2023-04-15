@@ -3,7 +3,6 @@ package com.app.e_ticketing.activities.Users;
 import static android.content.ContentValues.TAG;
 import static com.app.e_ticketing.helpers.common_helper.collection_tickets;
 import static com.app.e_ticketing.helpers.common_helper.collection_users;
-import static com.app.e_ticketing.helpers.common_helper.getUserTicketList;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -77,6 +76,7 @@ public class MyPendingTicketsActivity extends BaseActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         getTickets();
     }
+
     private void getTickets(){
         mDatabase = firebaseDatabase.getReference(collection_tickets);
         if(list.size() != 0) list.clear();
@@ -98,7 +98,7 @@ public class MyPendingTicketsActivity extends BaseActivity {
                             String status = ds.child("status").getValue(String.class);
                             double amount = ds.child("amount").getValue(double.class);
                             Boolean payment_status = ds.child("payment_status").getValue(boolean.class);
-                            if(user.getVehicleRegNo().equals(vehicle_reg_no)) {
+                            if(user.getVehicleRegNo().equals(vehicle_reg_no) && !payment_status) {
                                 list.add(new Ticket(id, ticket_name, "", user_name, datetime, description, location,
                                         amount, vehicle_reg_no, payment_status, status));
                             }
