@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "572588645678",
+    "firebase_url": "https://e-ticketing-26309-default-rtdb.firebaseio.com",
+    "project_id": "e-ticketing-26309",
+    "storage_bucket": "e-ticketing-26309.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572588645678:android:ccf269c40f34b147e92ebf",
+        "android_client_info": {
+          "package_name": "com.app.e_ticketing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572588645678-h4kctkt0ffjnm7bacsg2viv4lf2pee0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnN5LuPlTnSqKN-F2SK_cb5A0zRccrl4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572588645678-h4kctkt0ffjnm7bacsg2viv4lf2pee0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

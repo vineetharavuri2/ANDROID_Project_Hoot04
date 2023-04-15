@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:padding="7dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        android:clickable="true"
+        android:id="@+id/ticketItemCard"
+        android:foreground="?attr/selectableItemBackground"
+        android:focusable="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/parent_layout">
+
+            <ImageView
+                android:id="@+id/ticket_item_image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/ticket"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/tvTicketIssueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:paddingEnd="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="9dp"
+                android:maxLines="1"
+                android:text="01-01-2023"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/cardview_dark_background" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:text="Person Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/primary"/>
+            <TextView
+                android:id="@+id/tvTicketName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:text="traffic violation rule"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/primary_dark" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_chevron_right_24"
+                android:tint="#BFBDBD"
+                android:id="@+id/openArrow"
+                android:alpha="0.7"
+                tools:ignore="UseAppTint"
+                />
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_alignRight="@+id/openArrow"
+                android:paddingEnd="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="Pending"
+                android:textColor="@color/yellow" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
