@@ -66,6 +66,7 @@ public class TicketDetails extends BaseActivity {
         }
     }
 
+    
     boolean check= false;
     private void getTicketDetails(String strId)
     {
