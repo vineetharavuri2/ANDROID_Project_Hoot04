@@ -8,20 +8,18 @@ public class User {
     private String email;
     private String contact;
     private String address;
-    private String vehicleRegNo;
     private String dob;
     private String gender;
     private boolean status;
 
     public User(){}
-    public User(String id, String email, String name, String contact, String address, String vehicleRegNo,
+    public User(String id, String email, String name, String contact, String address,
                 String gender,String dob, boolean status) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.gender = gender;
         this.dob = dob;
-        this.vehicleRegNo = vehicleRegNo;
         this.contact = contact;
         this.address = address;
         this.status = status;
@@ -65,14 +63,6 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public String getVehicleRegNo() {
-        return vehicleRegNo;
-    }
-
-    public void setVehicleRegNo(String vehicleRegNo) {
-        this.vehicleRegNo = vehicleRegNo;
     }
 
     public boolean isStatus() {

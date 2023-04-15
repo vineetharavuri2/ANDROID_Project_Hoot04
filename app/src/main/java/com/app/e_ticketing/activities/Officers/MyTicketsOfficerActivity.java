@@ -50,7 +50,7 @@ public class MyTicketsOfficerActivity extends BaseActivity {
         getTickets();
     }
 
-    private void getTickets(){
+    private void  getTickets(){
         if(list.size() != 0) list.clear();
         showProgressDialog();
         mDatabase.addListenerForSingleValueEvent( new ValueEventListener() {
