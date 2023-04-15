@@ -8,7 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.app.e_ticketng.R;
+import com.app.e_ticketing.R;
 import com.app.e_ticketng.activities.LoginActivity;
 
 public class MyTicketsOfficerActivity extends AppCompatActivity {

@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.app.e_ticketng.R;
+import com.app.e_ticketing.R;
 import com.app.e_ticketng.activities.Officers.DashboardOfficerActivity;
 import com.app.e_ticketng.activities.Users.DashboardUserActivity;
 

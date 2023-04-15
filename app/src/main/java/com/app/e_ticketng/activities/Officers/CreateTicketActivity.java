@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.app.e_ticketng.R;
+import com.app.e_ticketing.R;
 import com.app.e_ticketng.activities.LoginActivity;
 
 public class CreateTicketActivity extends AppCompatActivity implements View.OnClickListener {
