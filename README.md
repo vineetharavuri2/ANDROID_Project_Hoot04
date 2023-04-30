@@ -23,11 +23,11 @@ Pitchaiah Lella <br>
  
  **Credentials**<br>
  **User**<br>
- **ID**:user@gmail.com<br>
- **Password**:User123<br>
+ **ID**:sravanthreddy.pullamgari@gmail.com<br>
+ **Password**:12345678<br>
  
  **Officer**<br>
- **Officer ID**:Officer@gmail.com<br>
+ **Officer ID**:officer@gmail.com<br>
  **Password**:officer123<br>
  
  **Sequencing**<br>
@@ -58,3 +58,25 @@ Successful login to user view<br>
 1)Pending tickets - where they can see their pending tickets and stuff<br>
 2)Court schedule - also they can see their court hearing schedule<br>
 3)Payment - also they can pay their fine through the payment gateway<br>
+
+
+**Completion Status** 
+Login and Signup pages - Completed
+**Officer Dashboard**
+Creating tickets - Completed
+Checking my tickets - Completed
+Checking Ticket Status - Completed
+
+**User Dashboard**
+Check ticteks imposed - Completed
+Check previously closed/voided tickets - Completed
+Court Hearing Schedule - Completed
+Payments through app - partially completed
+Identify VIN from  picture - Incomplete
+
+
+
+
+
+
+
