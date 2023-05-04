@@ -74,6 +74,9 @@ Court Hearing Schedule - Completed
 Payments through app - partially completed
 Identify VIN from  picture - Incomplete
 
+**NOTE**
+For "Tickets that neend attention" and "Court hearing schedule" activities , if the ticket age is greater than or equal to 30 days, it appears in these two modules.
+
 
 
 
